@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .searchouter .searchbar{
+            position: relative;
+            display: inline-block;
+        }
+
+        .searchouter .search{
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            pointer-events: none;
+        }
+
+        .searchouter .searchbar input{
+            padding-left: 40px; /* room for the icon */
+            height: 36px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="headerouter">
+            <img class="header" src="image copy.png" alt="GFG logo" >
+        </div>
+        <div class="searchouter">
+            <p class="searchbar">
+            
+                <img class="search" src="image.png" alt="search bar" >
+                <input type="text" placeholder="Search..">
+            </p>
+        </div>        
+    </div>
+</body>
+</html>
